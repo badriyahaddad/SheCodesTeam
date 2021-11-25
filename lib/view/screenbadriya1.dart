@@ -69,7 +69,7 @@ class _Badriya3State extends State<Badriya3> {
             ),
             SizedBox(
                 height: MediaQuery.of(context).size.height / 5.5,
-                width: MediaQuery.of(context).size.width,
+                width: MediaQuery.of(context).size.height,
                 child: Container(
                   height: MediaQuery.of(context).size.height / 5.5,
                   width: MediaQuery.of(context).size.width,
@@ -164,8 +164,8 @@ class _Badriya3State extends State<Badriya3> {
                                       horizontal: 10, vertical: 5),
                                 ),
                                 Container(
-                                  height: 100,
-                                  width: 500,
+                                  height:
+                                      MediaQuery.of(context).size.height / 5.5,
                                   child: ListView.builder(
                                       scrollDirection: Axis.horizontal,
                                       shrinkWrap: true,
