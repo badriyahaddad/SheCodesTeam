@@ -7,6 +7,7 @@ import 'package:sct/list/list.dart';
 import 'package:sct/view/screenbadriya2.dart';
 import 'package:expandable/expandable.dart';
 import 'package:sct/setting/colors.dart';
+import 'package:sizer/sizer.dart';
 
 class Badriya3 extends StatefulWidget {
   @override
@@ -43,6 +44,7 @@ class _Badriya3State extends State<Badriya3> {
         body: ListView(physics: ScrollPhysics(), children: [
       Stack(children: [
         Container(
+          height: MediaQuery.of(context).size.height / 5.5,
           child: Stack(
             children: [
               Container(
@@ -51,7 +53,8 @@ class _Badriya3State extends State<Badriya3> {
                         colors: [AhotColors.secondary3, AhotColors.primary2],
                         begin: Alignment.topLeft,
                         end: Alignment.bottomRight)),
-                height: 200,
+                height: MediaQuery.of(context).size.height / 5.5,
+                width: MediaQuery.of(context).size.width,
               ),
               Icon(Icons.arrow_back)
             ],
@@ -65,9 +68,11 @@ class _Badriya3State extends State<Badriya3> {
               padding: EdgeInsets.symmetric(horizontal: 10, vertical: 50),
             ),
             SizedBox(
-                width: 500,
-                height: 150,
+                height: MediaQuery.of(context).size.height / 5.5,
+                width: MediaQuery.of(context).size.width,
                 child: Container(
+                  height: MediaQuery.of(context).size.height / 5.5,
+                  width: MediaQuery.of(context).size.width,
                   child: Padding(
                     padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
                     child: Card(
@@ -171,6 +176,10 @@ class _Badriya3State extends State<Badriya3> {
                                         return Card(
                                           child: Center(
                                             child: Container(
+                                              height: MediaQuery.of(context)
+                                                      .size
+                                                      .height /
+                                                  5.5,
                                               child: ClipRRect(
                                                   borderRadius:
                                                       BorderRadius.circular(20),

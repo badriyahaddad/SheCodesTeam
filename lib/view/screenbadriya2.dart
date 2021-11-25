@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sct/list/list.dart';
+import 'package:sct/setting/colors.dart';
 
 class badriya2 extends StatefulWidget {
   @override
@@ -25,9 +26,13 @@ class _badriya2State extends State<badriya2> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          centerTitle: true,
-          title: Text(
-            "She codes",
+          flexibleSpace: Container(
+            decoration: BoxDecoration(
+                gradient: LinearGradient(
+                    colors: [AhotColors.secondary3, AhotColors.primary2],
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight)),
+            height: 200,
           ),
         ),
         body: FutureBuilder(
